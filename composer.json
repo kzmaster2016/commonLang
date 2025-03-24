@@ -1,0 +1,19 @@
+{
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "symfony/yaml": "^5.4",
+        "kzmaster2016/first-logger": "dev-master",
+        "kzmaster2016/local-logger": "*"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "code-php/packages/mylogger"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor_php"
+    }
+    
+}

@@ -1,0 +1,23 @@
+关键词
+
+interface
+
+class
+
+abstract class 
+
+final class
+
+extends implements
+
+trait :需要use两边：class外use是引入，class内use是使用
+
+use
+
+namespace
+
+public protected private
+
+new this obj->
+
+self static class::

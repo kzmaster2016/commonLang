@@ -1,0 +1,11 @@
+const df="asda"
+
+export default df
+
+export const df2="asda2"
+
+export const df3=function(){
+    console.log("asda3")
+}
+
+// 模块记载方式和加载顺序测试

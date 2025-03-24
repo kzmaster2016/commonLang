@@ -1,0 +1,25 @@
+关键词
+
+class className：定义
+
+__init__(self)：构造
+self.name：属性
+self.__age
+
+method1(self)：方法
+__method2(self)
+
+classproperty=：静态属性
+__classproperty2=：静态属性
+
+@classmethod：类方法：第一个参数是类
+method3(cls)
+
+@staticmethod：静态方法：可以没有类参数
+method4()
+
+calssName() 实例化
+
+class className(A,B) 继承
+
+没有接口

@@ -1,0 +1,14 @@
+{
+    "name": "kzmaster2016/first-logger",
+    "description": "A simple logger package",
+    "type": "library",
+    
+    "autoload": {
+        "psr-4": {
+            "kzmaster\\firstLogger\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.4"
+    }
+}
