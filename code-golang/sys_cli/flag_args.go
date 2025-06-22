@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"os"
 	"strconv"
-	"testing"
+	//"testing"
 )
 
-func TestCli(t *testing.T) {
+func TestCli() {
 	
 
-	t.Log("TestCli")
+	//t.Log("TestCli")
 
 	// 解析命令行参数
 	operation := flag.String("op", "", "operation: add or subtract")

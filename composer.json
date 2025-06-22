@@ -4,7 +4,9 @@
     "require": {
         "symfony/yaml": "^5.4",
         "kzmaster2016/first-logger": "dev-master",
-        "kzmaster2016/local-logger": "*"
+        "kzmaster2016/local-logger": "*",
+        "guzzlehttp/guzzle": "^7.9",
+        "mongodb/mongodb": "^1.8"
     },
     "repositories": [
         {

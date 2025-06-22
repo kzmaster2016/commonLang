@@ -4,7 +4,7 @@ import (
 	"demo/code-golang/functions"
 	"demo/code-golang/tools/algorithm"
 	"demo/code-golang/tools/questions"
-	// "demo/code-golang/cli"
+	"demo/code-golang/sys_cli"
 	"fmt"
 	"regexp"
 	"strings"
@@ -39,5 +39,6 @@ func main() {
 
 	fmt.Println(len([]rune("Hello匡正")))
 
-	// cli.RunCliByArgs()
+	sys_cli.RunCliByArgs()
+	sys_cli.TestCli()
 }
