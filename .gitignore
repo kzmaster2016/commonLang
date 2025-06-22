@@ -3,3 +3,8 @@
 documents
 venv
 node_modules
+vendor
+vendor_php
+
+package-lock.json
+composer.lock
