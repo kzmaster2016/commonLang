@@ -8,3 +8,5 @@ vendor_php
 
 package-lock.json
 composer.lock
+
+*__pycache__*
