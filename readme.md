@@ -1,9 +1,9 @@
 ## 通用语言计划
 ### 语言列表
-1. php
-2. js+nodejs+typescript
-3. golang
-4. python
+1. php v8.0.2
+2. js+nodejs+typescript v16.15
+3. golang v1.24.4
+4. python 3.13.5
 5. shell
 
 ### 工程化
