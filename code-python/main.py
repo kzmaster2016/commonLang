@@ -44,3 +44,9 @@ third_module.third_level.print_var()
 # oop目录并不是一个包，但不影响子目录成为一个包
 from oop.package1 import module1
 print(module1.ai)
+
+def 匡正():
+    print("This is a function in the main module.")
+    
+    列表 = [1, 2, 3]
+    print("This is a list in the main module:", 列表)

@@ -2,9 +2,10 @@ package file_tests
 
 import (
 	"fmt"
+	"io"
+	"os"
 	"path"
 	"testing"
-    "os"
 )
 
 func TestPath(t *testing.T) {
@@ -37,6 +38,14 @@ func TestPath(t *testing.T) {
 	// 获取脚本所在目录
 	dir2 := path.Dir(execPath)
 
-	fmt.Println("脚本所在目录:", dir2, execPath)
-    
+	fmt.Println("脚本所在目录:", dir2, execPath) 
+
+	fd,_ :=os.Open( dir+"/exampleDir/example.txt")
+	content := make([]byte, 2)
+
+	fd.Read(content)
+	fmt.Println("读取文件内容:", string(content[:]))
+
+	content,_ = io.ReadAll(fd)
+	fmt.Println("读取文件内容2:", string(content[:]))
 }
