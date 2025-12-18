@@ -8,5 +8,15 @@
     "mysql2": "^3.14.1",
     "xml2js": "^0.6.2",
     "yaml": "^2.7.0"
+  },
+  "name": "common_framework",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "projects/electron_game/main.js",
+  "scripts": {
+  },
+  "devDependencies": {
+    "electron": "^36.5.0",
+    "electron-builder": "^26.0.12"
   }
 }

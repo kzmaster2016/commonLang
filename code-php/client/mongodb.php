@@ -1,7 +1,8 @@
 <?php
 require '../../vendor_php/autoload.php';
 
-$client = new MongoDB\Client("mongodb://192.168.4.195:27017");
+$confg = json_decode(file_get_contents(__DIR__ . '/../../config/mongodb.json'), true);
+$client = new MongoDB\Client(sprintf("mongodb://%s:%d", $confg['defaults']['host'], $confg['defaults']['port']));
 $collection = $client->test->users;
 
 $result = $collection->insertOne(['name' => 'Alice', 'age' => 25]);

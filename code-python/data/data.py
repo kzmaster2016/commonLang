@@ -18,9 +18,11 @@ s2 = 'world'
 s3 = '''This is
 a multi-line
 string.'''
-s4 = '''This is
+s4 = """
+This is
 another multi-line
-string.'''
+string.
+"""
 
 tuple1 = (1, 2, 3)  # tuple1 = 1,2,3 不用小括号也可以，当时不建议这样写
 list1 = [1, 2, 3]

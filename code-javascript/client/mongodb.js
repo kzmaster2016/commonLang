@@ -1,6 +1,14 @@
 import {MongoClient} from 'mongodb';
+import fs from 'fs';
 
-const uri = 'mongodb://192.168.4.195:27017';
+const config = JSON.parse(
+  fs.readFileSync('./config/mongodb.json', 'utf8')
+);
+
+//console.log(config);
+
+const uri = 'mongodb://'+config.defaults.host+':'+config.defaults.port+'/test?authSource=admin';
+
 const client = new MongoClient(uri);
 
 async function run() {

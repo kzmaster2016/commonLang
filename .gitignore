@@ -5,6 +5,7 @@ venv
 node_modules
 vendor
 vendor_php
+projects
 
 package-lock.json
 composer.lock
