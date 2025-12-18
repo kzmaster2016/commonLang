@@ -1,6 +1,6 @@
 
 process.env.TZ = 'UTC';
-console.log(new Date().toString());  
+console.log(new Date().toString());
 
 const date = new Date();
 const timezoneOffset = date.getTimezoneOffset();  // 返回当前时区与 UTC 的分钟差
@@ -17,11 +17,11 @@ console.log(formattedDate);  // 输出：例如：2/18/2025, 4:32:00 AM
 
 new Date(2025, 1, 18, 14, 30, 0)
 
-const df="asda"
+const df = "asda"
 export default df
 
-export const df2="asda2"
+export const df2 = "asda2"
 
-export const df3=function(){
+export const df3 = function () {
     console.log("asda3")
 }

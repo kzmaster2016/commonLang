@@ -3,6 +3,7 @@ from pathlib import Path
 
 file_path = "./dir/subdir/example.txt"
 
+
 # 获取绝对路径
 abs_path = os.path.abspath(file_path)
 
@@ -23,4 +24,7 @@ print("目录名:", dir_name)
 print("文件名:", file_name)
 print("文件名无后缀:", file_name)
 print("扩展名:", ext)
-print("拼接路径:", new_path)
+print("拼接路径:", new_path, os.path.abspath(new_path))
+
+info = os.stat(file_path)
+
