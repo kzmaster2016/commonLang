@@ -1,4 +1,4 @@
----
+# ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -69,7 +69,7 @@ spec:
             type: Directory
           name: yth-per
 
----
+# ---
 apiVersion: v1
 kind: Service
 metadata:
@@ -101,7 +101,7 @@ spec:
   sessionAffinity: None
   type: NodePort
 
----
+# ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:

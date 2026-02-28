@@ -1,0 +1,32 @@
+name: dw
+version: 1.0.0
+# 短对象
+obj: {a: 1, b: 2}
+# 短数组
+arr: [1, 2, 3]
+# 短嵌套
+nested: {a: {b: 2}, c: [3, 4, {v: 5}]}
+list: 
+  - name: hyperf
+    type: deployment
+  - name: hyperf2
+    type: 
+      - deployment
+      - service:
+          name
+      - service3: name3
+  - 1
+  
+  - null
+list2:
+  - d1
+  - d2:
+      name: hyperf3
+  - - - dd:
+        name: hyperf4
+      - []
+      - d3
+    - 1
+  - - d3
+    - 1
+  - d3

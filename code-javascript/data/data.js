@@ -137,6 +137,43 @@ false	"false"	0	false
 {} (空对象)	"[object Object]"	NaN	true
 */
 
+/**
+ * 通用空值判断函数
+ * @param {*} value 要判断的变量
+ * @returns {boolean} true=空，false=非空
+ */
+function isEmpty(value) {
+  // 1. null/undefined
+  if (value === null || value === undefined) return true;
+  
+  // 2. 字符串（空/全空格）
+  if (typeof value === 'string') return value.trim() === '';
+  
+  // 3. 数字（0/NaN）
+  if (typeof value === 'number') return value === 0 || Number.isNaN(value);
+  
+  // 4. 数组
+  if (Array.isArray(value)) return value.length === 0;
+  
+  // 5. 对象（非数组、非null）
+  if (typeof value === 'object' && !Array.isArray(value) && value !== null) {
+    return Object.keys(value).length === 0;
+  }
+  
+  // 其他类型（布尔值、函数等）视为非空
+  return false;
+}
+
+// 测试用例
+console.log(isEmpty(null));    // true
+console.log(isEmpty('   '));   // true
+console.log(isEmpty(0));       // true
+console.log(isEmpty(NaN));     // true
+console.log(isEmpty([]));      // true
+console.log(isEmpty({}));      // true
+console.log(isEmpty(false));   // false（布尔值false不视为空）
+console.log(isEmpty('hello')); // false
+
 // -----------------对象关系（与构造函数）判断--------------
 
 console.log([] instanceof Array); // true

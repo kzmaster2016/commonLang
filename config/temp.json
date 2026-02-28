@@ -1,0 +1,352 @@
+{
+    "root": {
+        "data": {
+            "id": "34ae748ca50e",
+            "created": 1583926939,
+            "text": "开发环境部署"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c17za41fze00",
+                    "created": 1583927055526,
+                    "text": "服务器"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c17zb1nufxc0",
+                            "created": 1583927128715,
+                            "text": "nginx",
+                            "font-weight": "bold",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c181qlsv98o0",
+                                    "created": 1583933990236,
+                                    "text": "linux下",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c181qowhfkg0",
+                                            "created": 1583933996985,
+                                            "text": "yum安装",
+                                            "note": "安装过程已验证\nyum install epel-release\nyum install nginx\nsystemctl start nginx.service\nsystemctl enable nginx.service",
+                                            "hyperlink": "https://www.cnblogs.com/tkzc2013/p/12305499.html",
+                                            "hyperlinkTitle": ""
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c181qsmmrq80",
+                                            "created": 1583934005097,
+                                            "text": "编译安装",
+                                            "note": "安装过程已验证",
+                                            "hyperlink": "https://www.cnblogs.com/tkzc2013/p/9932743.html",
+                                            "hyperlinkTitle": ""
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c181qyfa4xs0",
+                                    "created": 1583934017713,
+                                    "text": "windows下",
+                                    "note": "使用phpstudy集成环境"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c17zb36zt8o0",
+                            "created": 1583927132049,
+                            "text": "apache"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c17zdmryb4w0",
+                                    "created": 1583927331404,
+                                    "text": "linux下",
+                                    "note": "安装过程已验证\nyum install httpd\nsystemctl start httpd.service\nsystemctl enable httpd.service",
+                                    "hyperlink": "https://www.cnblogs.com/tkzc2013/p/12305499.html",
+                                    "hyperlinkTitle": ""
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c181sl5rs3s0",
+                                    "created": 1583934145569,
+                                    "text": "windos下",
+                                    "note": "使用phpstudy集成环境"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c17z9yemz000",
+                    "created": 1583927043263,
+                    "text": "数据库"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c17zaieamrs0",
+                            "created": 1583927086778,
+                            "text": "mysql",
+                            "font-weight": "bold"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c17zdptl84w0",
+                                    "created": 1583927338033,
+                                    "text": "linux下",
+                                    "hyperlink": "https://www.runoob.com/mysql/mysql-install.html",
+                                    "hyperlinkTitle": "",
+                                    "note": "安装过程已验证\n建议yum安装\nrpm -ivh http://repo.mysql.com/yum/mysql-5.7-community/el/7/x86_64/mysql57-community-release-el7-10.noarch.rpm\n\nyum install mysql-community-server\nsystemctl start mysqld.service\nsystemctl enable mysqld.service"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c17zdznmuwg0",
+                                    "created": 1583927359441,
+                                    "text": "windows下",
+                                    "note": "使用phpstudy集成环境",
+                                    "hyperlink": "https://www.runoob.com/mysql/mysql-install.html",
+                                    "hyperlinkTitle": ""
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c17zalcqje00",
+                            "created": 1583927093214,
+                            "text": "redis",
+                            "expandState": "expand",
+                            "font-weight": "bold"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c17ze5hd2sg0",
+                                    "created": 1583927372122,
+                                    "text": "linux下",
+                                    "note": "安装过程已验证\n配置：https://www.cnblogs.com/tkzc2013/p/12465056.html",
+                                    "hyperlink": "https://redis.io/download",
+                                    "hyperlinkTitle": ""
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c17ze7s6mjk0",
+                                    "created": 1583927377130,
+                                    "text": "windows下",
+                                    "hyperlink": "https://www.runoob.com/redis/redis-install.html",
+                                    "hyperlinkTitle": "",
+                                    "note": "安装过程已验证"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c17zao1bv8o0",
+                            "created": 1583927099055,
+                            "text": "mongodb",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c17zef3vbqw0",
+                                    "created": 1583927393074,
+                                    "text": "linux下",
+                                    "hyperlink": "https://www.runoob.com/mongodb/mongodb-linux-install.html",
+                                    "hyperlinkTitle": "",
+                                    "note": "官方文档：\nhttps://docs.mongodb.com/manual/\n下载安装：\nhttps://www.cnblogs.com/tkzc2013/p/14249071.html"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c17zeh7y2qo0",
+                                    "created": 1583927397674,
+                                    "text": "windows下",
+                                    "hyperlink": "https://www.runoob.com/mongodb/mongodb-window-install.html",
+                                    "hyperlinkTitle": ""
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c17za680r0w0",
+                    "created": 1583927060278,
+                    "text": "语言"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c17zbuxw6cw0",
+                            "created": 1583927192449,
+                            "text": "nodejs",
+                            "expandState": "expand",
+                            "font-weight": "bold"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c17zcv3ngw80",
+                                    "created": 1583927271161,
+                                    "text": "linux下",
+                                    "hyperlink": "https://www.runoob.com/nodejs/nodejs-install-setup.html",
+                                    "hyperlinkTitle": "",
+                                    "note": "安装过程已验证"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c17zemu3mpk0",
+                                    "created": 1583927409898,
+                                    "text": "windows下",
+                                    "hyperlink": "https://www.runoob.com/nodejs/nodejs-install-setup.html",
+                                    "hyperlinkTitle": "",
+                                    "note": "安装过程已验证"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cb964ii90000",
+                            "created": 1620609508959,
+                            "text": "python：参考通用语言腾讯文档"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "dat4nqoh7dc0",
+                            "created": 1750602117985,
+                            "text": "golang：参考通用语言腾讯文档"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "dat4nrrqz6g0",
+                            "created": 1750602120359,
+                            "text": "php：参考 \"开发工具箱\" 脑图"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c17zewu3qkw0",
+                    "created": 1583927431666,
+                    "text": "其他服务"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c7h2t6e9a000",
+                            "created": 1606788003154,
+                            "text": "RabbitMq消息队列",
+                            "font-weight": "bold",
+                            "color": "#c00000"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c7h2ueakotk0",
+                            "created": 1606788098710,
+                            "text": "supervisor进程管理",
+                            "font-weight": "bold"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cb964ycf2540",
+                            "created": 1620609543435,
+                            "text": "kafka消息队列"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cb967oorjiw0",
+                            "created": 1620609757506,
+                            "text": "elasticsearch搜索引擎"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cb966tce4y00",
+                    "created": 1620609689278,
+                    "text": "项目和代码管理"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cb9672clzvc0",
+                            "created": 1620609708882,
+                            "text": "git"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cb9675r4h340",
+                            "created": 1620609716290,
+                            "text": "composer"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cb9678rztf40",
+                            "created": 1620609722873,
+                            "text": "npm"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "filetree",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

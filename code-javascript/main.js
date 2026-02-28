@@ -10,6 +10,7 @@ do{
     $count++;
 }while ($count < 3 ) 
 
+console.log(Array.from({ length: 3 }));
     
     
 //npm install 安装失败,修改镜像 

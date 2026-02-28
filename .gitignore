@@ -1,5 +1,6 @@
 .idea
 .vscode
+.github
 documents
 venv
 node_modules
